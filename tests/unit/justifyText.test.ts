@@ -1,4 +1,4 @@
-import { justifyText as justifierTexte } from '../justifyText';
+import { justifyText as justifierTexte } from '../../src/utils/justifyText';
 
 describe('justifierTexte', () => {
   test('texte vide retourne une chaine vide', () => {

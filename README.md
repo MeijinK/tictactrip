@@ -108,6 +108,10 @@ Collection disponible dans `Public Tictactrip.postman_collection.json`.
 2. Sélectionner `Public Tictactrip.postman_collection.json`
 3. Modifier l'URL de base selon votre environnement
 
+## Références
+
+- [Text Justification - LeetCode Problem Explanation](https://www.youtube.com/watch?v=TzMl4Z7pVh8)
+
 ## Auteur
 
 Emile Junior ADA
