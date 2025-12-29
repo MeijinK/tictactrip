@@ -10,9 +10,16 @@ API REST développée en TypeScript avec Express qui justifie un texte sur 80 ca
 ## Fonctionnalités
 
 - Justification de texte sur 80 caractères par ligne
-- Algorithme de justification sans bibliothèque externe
 - Authentification via token unique (UUID)
 - Rate limiting : 80 000 mots maximum par jour par token
+
+## Technologies utilisées
+
+- **Node.js**
+- **TypeScript**
+- **Express.js**
+- **Jest** Tests unitaires et d'intégration
+- **Supertest** Tests d'API
 
 ## Installation
 
