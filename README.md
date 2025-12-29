@@ -17,7 +17,7 @@ API REST développée en TypeScript avec Express qui justifie un texte sur 80 ca
 ## Installation
 
 ```bash
-git clone https://github.com/votre-username/tictactrip
+git clone https://github.com/Meijink/tictactrip
 cd tictactrip
 npm install
 ```
