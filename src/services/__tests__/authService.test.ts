@@ -1,4 +1,4 @@
-import { genererToken, validerToken } from '../authService';
+import { generateToken as genererToken, validateToken as validerToken } from '../authService';
 
 describe('authService', () => {
   test('genererToken retourne un token pour un email', () => {

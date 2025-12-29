@@ -1,4 +1,4 @@
-import { verifierLimite, incrementerCompteur, compterMots } from '../rateLimiter';
+import { checkLimit as verifierLimite, incrementCounter as incrementerCompteur, countWords as compterMots } from '../rateLimiter';
 
 describe('rateLimiter', () => {
   describe('compterMots', () => {

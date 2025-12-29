@@ -1,24 +1,24 @@
 import { randomUUID } from 'crypto';
 
-const emailVersToken = new Map<string, string>();
-const tokensValides = new Set<string>();
+const emailToToken = new Map<string, string>();
+const validTokens = new Set<string>();
 
-export function genererToken(email: string): string {
-  const tokenExistant = emailVersToken.get(email);
-  if (tokenExistant) {
-    return tokenExistant;
+export function generateToken(email: string): string {
+  const existingToken = emailToToken.get(email);
+  if (existingToken) {
+    return existingToken;
   }
 
-  const nouveauToken = randomUUID();
-  emailVersToken.set(email, nouveauToken);
-  tokensValides.add(nouveauToken);
+  const newToken = randomUUID();
+  emailToToken.set(email, newToken);
+  validTokens.add(newToken);
 
-  return nouveauToken;
+  return newToken;
 }
 
-export function validerToken(token: string): boolean {
+export function validateToken(token: string): boolean {
   if (!token) {
     return false;
   }
-  return tokensValides.has(token);
+  return validTokens.has(token);
 }
