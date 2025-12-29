@@ -14,7 +14,7 @@ describe('justifierTexte', () => {
     const lignes = resultat.split('\n');
 
     expect(lignes.length).toBe(1);
-    expect(lignes[0].length).toBe(80);
+    expect(lignes[0]).toBe('Bonjour tout le monde');
   });
 
   test('texte long génère plusieurs lignes', () => {
